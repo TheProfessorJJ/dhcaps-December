@@ -75,14 +75,26 @@ img.emoji {
 
 <link rel="preload" href="//fonts.googleapis.com/css?family=Poppins%3A400%2C600&#038;display=swap&#038;ver=2.11.1" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all">
 
-<script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js" defer></script>
-
+<script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" defer src="https://www.dhcaps.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.5.6" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Tue","wednesday":"Wed","thursday":"Thu","friday":"Fri","saturday":"Sat","sunday":"Sun"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"}}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/www.dhcaps.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.dhcaps.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_legacy_multi = {"1":""};
+/* ]]> */
+</script>
+<script type="text/javascript" id="gform_gravityforms-js-before">
 
-
-
-
-
+</script>
+<script type="text/javascript" defer src="https://www.dhcaps.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.5.6" id="gform_gravityforms-js"></script>
+<script type="text/javascript" id="gform_conditional_logic-js-extra">
+/* <![CDATA[ */
+var gf_legacy = {"is_legacy":""};
+/* ]]> */
+</script>
+<script type="text/javascript" defer src="https://www.dhcaps.com/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.5.6" id="gform_conditional_logic-js"></script>
 <script type="text/javascript" defer src="https://www.google.com/recaptcha/api.js?hl=en&#038;ver=5.8.2#038;render=explicit" id="gform_recaptcha-js"></script>
 <link rel="https://api.w.org/" href="https://www.dhcaps.com/wp-json/">
 <link rel="alternate" type="application/json" href="https://www.dhcaps.com/wp-json/wp/v2/posts/467">
@@ -91,9 +103,17 @@ img.emoji {
 <meta name="generator" content="WordPress 5.8.2">
 <link rel="shortlink" href="https://www.dhcaps.com/?p=467">
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script data-rocketlazyloadscript="https://www.dhcaps.com/wp-content/cache/busting/1/gtm-609a0547384924fff370f200dc59456f.js" data-no-minify="1" async></script>
-<script data-rocketlazyloadscript="data:text/javascript;base64,DQogIHdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdOw0KICBmdW5jdGlvbiBndGFnKCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKTt9DQogIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7DQoNCiAgZ3RhZygnY29uZmlnJywgJ1VBLTE5NTI0NDY5Mi0xJyk7DQo="></script>
-<!-- Enter your scripts here --><script data-rocketlazyloadscript="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" async crossorigin="anonymous"></script>
+<script data-no-minify="1" async src="https://www.dhcaps.com/wp-content/cache/busting/1/gtm-609a0547384924fff370f200dc59456f.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-195244692-1');
+</script>
+
+<!-- Enter your scripts here --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" crossorigin="anonymous"></script>
 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
 <script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">//<![CDATA[
 	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pagePostAuthor":"admin_dhcaps"};
@@ -107,7 +127,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-59BDXGW');//]]>
 </script>
 <!-- End Google Tag Manager -->
-<!-- End Google Tag Manager for WordPress by gtm4wp.com -->		
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->		<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
 				<style>.no-js img.lazyload { display: none; }
 			figure.wp-block-image img.lazyloading { min-width: 150px; }
 							.lazyload, .lazyloading { opacity: 0; }
@@ -120,7 +142,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" href="https://www.dhcaps.com/wp-content/uploads/2021/04/LOGO-for-web-2.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://www.dhcaps.com/wp-content/uploads/2021/04/LOGO-for-web-2.png">
 <meta name="msapplication-TileImage" content="https://www.dhcaps.com/wp-content/uploads/2021/04/LOGO-for-web-2.png">
-<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
 <script>
 /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
 (function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
@@ -173,10 +194,8 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 <div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	<div class="site-logo">
 	<a class="brand" href="https://www.dhcaps.com/" title="Dhaka Hats &amp; Caps" aria-label="Dhaka Hats &amp; Caps"><div class="title-with-logo">
-<img width="200" height="127" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20127'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png"><noscript>
 <img width="200" height="127" alt="" data-src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png" class="attachment-full size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript>
 <img width="200" height="127" alt="" data-src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png" class="attachment-full size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="200" height="127" src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png" class="attachment-full size-full" alt=""></noscript>
-</noscript>
 </noscript>
 <div class="nv-title-tagline-wrap"><p class="site-title">Dhaka Hats &amp; Caps</p></div>
 </div></a>
@@ -224,10 +243,8 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 <div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	<div class="site-logo">
 	<a class="brand" href="https://www.dhcaps.com/" title="Dhaka Hats &amp; Caps" aria-label="Dhaka Hats &amp; Caps"><div class="title-with-logo">
-<img width="200" height="127" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20127'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png"><noscript>
 <img width="200" height="127" alt="" data-src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png" class="attachment-full size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript>
 <img width="200" height="127" alt="" data-src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png" class="attachment-full size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="200" height="127" src="https://www.dhcaps.com/wp-content/uploads/2021/04/cropped-LOGO-for-web-2.png" class="attachment-full size-full" alt=""></noscript>
-</noscript>
 </noscript>
 <div class="nv-title-tagline-wrap"><p class="site-title">Dhaka Hats &amp; Caps</p></div>
 </div></a>
@@ -320,9 +337,7 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 <ul class="nv-meta-list"><li class="meta author vcard"><span class="author-name fn">by <a href="https://www.dhcaps.com/author/admin_dhcaps/" title="Posts by admin_dhcaps" rel="author">admin_dhcaps</a></span></li></ul>
 </div></div>
 <div class="nv-thumb-wrap">
-<img width="600" height="600" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20600'%3E%3C/svg%3E" class="attachment-neve-blog size-neve-blog wp-post-image" alt="" data-lazy-srcset="https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post.jpg 600w, https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post-300x300.jpg 300w, https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post-150x150.jpg 150w" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post.jpg"><noscript>
 <img width="600" height="600" alt="" data-srcset="https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post.jpg 600w, https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post-300x300.jpg 300w, https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post-150x150.jpg 150w" data-src="https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post.jpg" data-sizes="(max-width: 600px) 100vw, 600px" class="attachment-neve-blog size-neve-blog wp-post-image lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="600" height="600" src="https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post.jpg" class="attachment-neve-blog size-neve-blog wp-post-image" alt="" srcset="https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post.jpg 600w, https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post-300x300.jpg 300w, https://www.dhcaps.com/wp-content/uploads/2021/04/Modern-Gradient-National-Teachers-Day-Event-Instagram-Post-150x150.jpg 150w" sizes="(max-width: 600px) 100vw, 600px"></noscript>
-</noscript>
 </div>
 <div class="nv-content-wrap entry-content">
 <h3>Find the right Hats supplier for your company</h3>
@@ -345,7 +360,7 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 
 
 
-<script data-rocketlazyloadscript="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" async="" crossorigin="anonymous"></script>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" crossorigin="anonymous"></script>
 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8721136696893226" data-ad-slot="1449268060"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
@@ -371,7 +386,7 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 
 		</div>
 <div id="custom_html-4" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget">
-<script data-rocketlazyloadscript="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" async crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" crossorigin="anonymous"></script>
 <!-- Sidebar Ad -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8721136696893226" data-ad-slot="2364229649" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>
@@ -379,7 +394,7 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 </script>
 </div></div>
 <div id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget">
-<script data-rocketlazyloadscript="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" async crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" crossorigin="anonymous"></script>
 <!-- Sidebar ad2 -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8721136696893226" data-ad-slot="4789430049" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>
@@ -387,7 +402,7 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 </script>
 </div></div>
 <div id="custom_html-6" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget">
-<script data-rocketlazyloadscript="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" async crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8721136696893226" crossorigin="anonymous"></script>
 <!-- DHCA Home-1 -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8721136696893226" data-ad-slot="4114287403" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>
@@ -427,27 +442,30 @@ else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" width="0" style="display:none;visibility:hidden" data-src="https://www.googletagmanager.com/ns.html?id=GTM-59BDXGW" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) --><script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
 <script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-
+<script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/dist/dom-ready.min.js?ver=71883072590656bf22c74c7b887df3dd" id="wp-dom-ready-js"></script>
 <script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de" id="wp-hooks-js"></script>
 <script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79" id="wp-i18n-js"></script>
-
-
-
+<script type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
+</script>
+<script type="text/javascript" id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/dist/a11y.min.js?ver=0ac8327cc1c40dcfdf29716affd7ac63" id="wp-a11y-js"></script>
 <script type="text/javascript" id="4d06f9744-js-extra">
 /* <![CDATA[ */
-var localize = {"ajaxurl":"https:\/\/www.dhcaps.com\/wp-admin\/admin-ajax.php","nonce":"c9eea074c7","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."}};
+var localize = {"ajaxurl":"https:\/\/www.dhcaps.com\/wp-admin\/admin-ajax.php","nonce":"3735abbb74","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."}};
 /* ]]> */
 </script>
-
+<script type="text/javascript" src="https://www.dhcaps.com/wp-content/uploads/essential-addons-elementor/734e5f942.min.js?ver=1639224430" id="4d06f9744-js"></script>
 <script type="text/javascript" id="rocket-browser-checker-js-after">
 "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
-</script>
-<script type="text/javascript" id="rocket-delay-js-js-after">
-(function() {
-"use strict";var e=function(){function n(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(e,t,r){return t&&n(e.prototype,t),r&&n(e,r),e}}();function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function r(e,t){n(this,r),this.attrName="data-rocketlazyloadscript",this.browser=t,this.options=this.browser.options,this.triggerEvents=e,this.userEventListener=this.triggerListener.bind(this)}return e(r,[{key:"init",value:function(){this._addEventListener(this)}},{key:"reset",value:function(){this._removeEventListener(this)}},{key:"_addEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.addEventListener(e,t.userEventListener,t.options)})}},{key:"_removeEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.removeEventListener(e,t.userEventListener,t.options)})}},{key:"_loadScriptSrc",value:function(){var r=this,e=document.querySelectorAll("script["+this.attrName+"]");0!==e.length&&Array.prototype.slice.call(e).forEach(function(e){var t=e.getAttribute(r.attrName);e.setAttribute("src",t),e.removeAttribute(r.attrName)}),this.reset()}},{key:"triggerListener",value:function(){this._loadScriptSrc(),this._removeEventListener(this)}}],[{key:"run",value:function(){RocketBrowserCompatibilityChecker&&new r(["keydown","mouseover","touchmove","touchstart","wheel"],new RocketBrowserCompatibilityChecker({passive:!0})).init()}}]),r}();t.run();
-}());
 </script>
 <script type="text/javascript" id="rocket-preload-links-js-extra">
 /* <![CDATA[ */
@@ -459,21 +477,22 @@ var RocketPreloadLinksConfig = {"excludeUris":"\/dhcaps(\/(.+\/)?feed\/?.+\/?|\/
 "use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
 }());
 </script>
-
+<script type="text/javascript" src="https://www.dhcaps.com/wp-content/plugins/wp-smush-pro/app/assets/js/smush-lazy-load.min.js?ver=3.8.7" id="smush-lazy-load-js"></script>
 <script type="text/javascript" id="neve-script-js-extra">
 /* <![CDATA[ */
-var NeveProperties = {"ajaxurl":"https:\/\/www.dhcaps.com\/wp-admin\/admin-ajax.php","nonce":"97f0190d31","isRTL":"","isCustomize":""};
+var NeveProperties = {"ajaxurl":"https:\/\/www.dhcaps.com\/wp-admin\/admin-ajax.php","nonce":"d76240fc18","isRTL":"","isCustomize":""};
 /* ]]> */
 </script>
-
-
-
-
-
-<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
-if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
-images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
-if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.dhcaps.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><script src="https://www.dhcaps.com/wp-content/cache/min/1/1936a8f5ec60f1d7169c37d23430e8c5.js" data-minify="1" defer></script><noscript>
+<script type="text/javascript" src="https://www.dhcaps.com/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=2.11.1" id="neve-script-js" async></script>
+<script type="text/javascript" src="https://www.dhcaps.com/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" id="neve-pro-scroll-to-top-js-extra">
+/* <![CDATA[ */
+var scrollOffset = {"offset":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.dhcaps.com/wp-content/plugins/neve-pro-addon/includes/modules/scroll_to_top/assets/js/build/script.js?ver=1.5.4" id="neve-pro-scroll-to-top-js" async></script>
+<script type="text/javascript" src="https://www.dhcaps.com/wp-content/plugins/neve-pro-addon/includes/modules/header_footer_grid/assets/js/build/front-end.js?ver=1.5.4" id="hfg_module-js" async></script>
+<script>"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript>
 <link rel="stylesheet" href="https://www.dhcaps.com/wp-content/cache/min/1/8cae1db6fd464668258eaca38812f1c9.css" media="all" data-minify="1">
 <link rel="stylesheet" id="neve-google-font-poppins-css" href="//fonts.googleapis.com/css?family=Poppins%3A400%2C600&#038;display=swap&#038;ver=2.11.1" type="text/css" media="all">
 </noscript>
